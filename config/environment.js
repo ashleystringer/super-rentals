@@ -20,6 +20,9 @@ module.exports = function (environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      usingCors: true,
+      corsWithCreds: true,
+      apiURL: 'http://localhost:8080'
     },
   };
 
@@ -46,6 +49,9 @@ module.exports = function (environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
+
+  ENV.MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiYXNobHMiLCJhIjoiY2trcnJvdmx6M2hnZjJwcGR6c241cWFjaiJ9.pQXIin9zjNXm1hBdnrMfog'
+  ;
 
   return ENV;
 };
