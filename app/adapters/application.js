@@ -4,9 +4,10 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
   host = 'http://localhost:8080';
   namespace = 'api';
   
-  buildURL(...args) {
+  /*buildURL(...args) {
     let url = `${super.buildURL(...args)}.json`;
-    console.log(url);
+    //let url = `${super.buildURL(...args)}`;
+    console.log("URL - " + url);
     return `${super.buildURL(...args)}.json`;
-  }
+  }*/
 }

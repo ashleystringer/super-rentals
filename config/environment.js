@@ -22,7 +22,7 @@ module.exports = function (environment) {
       // when it is created
       usingCors: true,
       corsWithCreds: true,
-      apiURL: 'http://localhost:8080'
+      apiURL: 'http://localhost:8080/api/rental'
     },
   };
 
