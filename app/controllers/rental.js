@@ -9,19 +9,14 @@ export default class RentalController extends Controller {
     @action test(){
         console.log("Testing test()");
         console.log(this.model);
-        this.model.title = 'Hello'
-        //this.model.set('title', 'Hello');
+        //this.model.title = 'Hello'
+        this.model.set('title', 'Hello');
+        console.log("model.title " + this.model.title);
         //this.get('model').save();
-        /*sthis.store.createRecord({
-            title: '?'
-        });*/
-        this.model.save();
-    }
-    @action test1(){
-        console.log("test1()");
-        let test = this.store.createRecord('rental', {
-            title: '???????'
+        this.model.save().then(()=>{
+            console.log('Successful');
+        }, ()=>{
+            console.log('Not successful');
         });
-        test.save();
     }
 }
