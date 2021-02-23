@@ -19,4 +19,10 @@ export default class RentalController extends Controller {
             console.log('Not successful');
         });
     }
+    @action delete(){
+        console.log("delete action");
+        console.log(this.model);
+        this.model.deleteRecord();
+        this.model.save();
+    }
 }

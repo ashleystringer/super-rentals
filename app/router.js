@@ -11,5 +11,5 @@ Router.map(function () {
   this.route('contact', {path: '/getting-in-touch'});
   this.route('rental', {path: '/rentals/:rental_id'});
   this.route('create-rental', {path: '/add-property'});
-  this.route('create-confirm', {path: '/confirm'});
+  this.route('delete-rental', {path: '/remove-property'});
 });
