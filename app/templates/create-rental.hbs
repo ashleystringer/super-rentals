@@ -1,0 +1,20 @@
+<div>
+    Create new rental property
+</div>
+<Jumbo>
+    <form {{action 'create' on='submit'}}> 
+        <div class='form-inp'><label>Title: </label>{{input name='title'}}</div>
+        <div class='form-inp'><label>Owner: </label>{{input name='owner'}}</div>
+        <div class='form-inp'><label>City: </label>{{input name='city'}}</div>
+        <div class='form-inp'><label>Number of bedrooms: </label>{{input name='bedroom' type='number'}}</div>
+        <div>
+            <select name='category'>
+                <option value=''>Category</option>
+                <option value='Apartment'>Apartment</option>
+                <option value='Condo'>Condo</option>
+                <option value='Estate'>Estate</option>
+            </select>
+        </div>
+        <button type='submit'>Create</button>
+    </form>
+</Jumbo>
